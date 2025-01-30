@@ -1,0 +1,23 @@
+{
+  "gather":
+  [
+    {
+      "field":"PineTree", // String
+      "pattern":"Bowl", // String
+      "sprinklerLeftRight":5, // Integer - Negative|Left, Positive|Right
+      "sprinklerUpDown":15, // Integer - Negative|Up, Positive|Down
+      "driftCompensation":false, // Boolean - true|on, false|off
+      "rotationDirection":false, // Boolean - true|Left, false|Right
+      "rotationAmount":4, // Integer - 0-4 "0 means off"
+      "gatherWithShiftlock":true, // Boolean - true|on, false|off
+      "length":4.4, // Float - limit to 10
+      "width":4.5, // Float - limit to 10
+      "frontBackInvert":false, // Boolean - true|on, false|off
+      "leftRightInvert":false, // Boolean - true|on, false|off
+      "gatherMinutes":10, // Integer - limit to 'large number'
+      "backpackPercentage":95, // Integer - 1-100 '0 is impractical'
+      "returnHiveBy":0 // Boolean - 1|reset, 0|walk
+        // there can be more configs
+    }
+  ]
+}
