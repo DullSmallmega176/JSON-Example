@@ -2,13 +2,11 @@
   "gather":
   [
     {
-      "field":"PineTree", // String
-      "pattern":"Bowl", // String
-      "sprinklerLeftRight":5, // Integer - Negative|Left, Positive|Right
-      "sprinklerUpDown":15, // Integer - Negative|Up, Positive|Down
-      "driftCompensation":false, // Boolean - true|on, false|off
-      "rotationDirection":false, // Boolean - true|Left, false|Right
-      "rotationAmount":4, // Integer - 0-4 "0 means off"
+      "field":"PineTree", // [String]
+      "pattern":"Bowl", // [String]
+      "sprinklerLocation": {"x":-5, "y":15}, // [Dict/JSON] | Negative|Left, Positive|Right
+      "driftCompensation":false, // Boolean | true|on, false|off
+      "rotationAmount":4, // Integer | -4 - 4 | Negative|Left, Positive|Right, 0|off
       "gatherWithShiftlock":true, // Boolean - true|on, false|off
       "length":4.4, // Float - limit to 10
       "width":4.5, // Float - limit to 10
