@@ -2,20 +2,36 @@
   "gather":
   [
     {
-      "field":"PineTree", // [String]
-      "pattern":"Bowl", // [String]
-      "sprinklerLocation": {"x":-5, "y":15}, // [Dict/JSON] | Negative|Left, Positive|Right
-      "driftCompensation":false, // Boolean | true|on, false|off
-      "rotationAmount":4, // Integer | -4 - 4 | Negative|Left, Positive|Right, 0|off
-      "gatherWithShiftlock":true, // Boolean - true|on, false|off
-      "length":4.4, // Float - limit to 10
-      "width":4.5, // Float - limit to 10
-      "frontBackInvert":false, // Boolean - true|on, false|off
-      "leftRightInvert":false, // Boolean - true|on, false|off
-      "gatherMinutes":10, // Integer - limit to 'large number'
-      "backpackPercentage":95, // Integer - 1-100 '0 is impractical'
-      "returnHiveBy":0 // Boolean - 1|reset, 0|walk
+      "field":"PineTree",                     // [String]
+      "pattern":"Bowl",                       // [String]
+      "sprinklerLocation": {"x":-5, "y":15},  // [Dict/JSON] | Negative|Left|Down, Positive|Right|Up
+      "driftCompensation":false,              // Boolean | true|on, false|off
+      "rotationAmount":4,                     // Integer | -4 - 4 | Negative|Left, Positive|Right, 0|off
+      "gatherWithShiftlock":true,             // Boolean - true|on, false|off
+      "length":4.4,                           // Float - limit to 10
+      "width":4.5,                            // Float - limit to 10
+      "frontBackInvert":false,                // Boolean - true|on, false|off
+      "leftRightInvert":false,                // Boolean - true|on, false|off
+      "gatherMinutes":10,                     // Integer - limit to 'large number'
+      "backpackPercentage":95,                // Integer - 1-100 '0 is impractical'
+      "returnHiveBy":0                        // Boolean - 1|reset, 0|walk
         // there can be more configs
     }
-  ]
+  ],
+  "field_defaults": {
+    "PineTree": {
+      "pattern":"Bowl",                       // [String]
+      "sprinklerLocation": {"x":-5, "y":15},  // [Dict/JSON] | Negative|Left|Down, Positive|Right|Up
+      "driftCompensation":false,              // Boolean | true|on, false|off
+      "rotationAmount":4,                     // Integer | -4 - 4 | Negative|Left, Positive|Right, 0|off
+      "gatherWithShiftlock":true,             // Boolean - true|on, false|off
+      "length":4.4,                           // Float - limit to 10
+      "width":4.5,                            // Float - limit to 10
+      "frontBackInvert":false,                // Boolean - true|on, false|off
+      "leftRightInvert":false,                // Boolean - true|on, false|off
+      "gatherMinutes":10,                     // Integer - limit to 'large number'
+      "backpackPercentage":95,                // Integer - 1-100 '0 is impractical'
+      "returnHiveBy":0                        // Boolean - 1|reset, 0|walk
+    }
+  }
 }
